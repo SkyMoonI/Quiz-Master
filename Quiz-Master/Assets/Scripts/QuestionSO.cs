@@ -7,13 +7,10 @@ using UnityEngine;
 public class QuestionSO : ScriptableObject
 {
     [TextArea(2, 6)]
-    [SerializeField]
-    string question = "Enter new question here";
-    [SerializeField]
-    string[] answers = new string[4];
+    [SerializeField] string question = "Enter new question here";
+    [SerializeField] string[] answers = new string[4];
     [Range(0, 3)]
-    [SerializeField] 
-    int correctAnswerIndex;
+    [SerializeField] int correctAnswerIndex;
 
     public string GetQuestion()
     {
@@ -27,5 +24,5 @@ public class QuestionSO : ScriptableObject
     {
         return correctAnswerIndex;
     }
-    
+
 }
